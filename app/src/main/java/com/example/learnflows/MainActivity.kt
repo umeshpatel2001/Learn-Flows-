@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.learnflows.ui.theme.LearnFlowsTheme
 import com.example.learnflows.ui.views.FlowBasicsScreen
+import com.example.learnflows.ui.views.StateFlowAndSharedFlowView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -36,7 +37,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier) {
-        FlowBasicsScreen()
+        StateFlowAndSharedFlowView()
     }
 }
 
